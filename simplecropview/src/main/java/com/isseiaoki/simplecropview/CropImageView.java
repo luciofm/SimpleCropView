@@ -1650,10 +1650,11 @@ public class CropImageView extends ImageView {
 
                 if (mSaveUri == null) {
                     postErrorOnMainThread(mSaveCallback);
-                    return;
+                } else {
+                    saveToFile(cropped, mSaveUri);
                 }
-                saveToFile(cropped, mSaveUri);
                 mIsCropping = false;
+                return;
             }
         });
     }
