@@ -1681,6 +1681,10 @@ public class CropImageView extends ImageView {
         return new RectF(mFrameRect);
     }
 
+    public RectF getImageRect() {
+        return new RectF(mImageRect);
+    }
+
     /**
      * Set crop mode
      *
