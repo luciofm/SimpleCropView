@@ -1456,7 +1456,7 @@ public class CropImageView extends ImageView {
                         public void run() {
                             mAngle = mExifRotation;
                             setImageBitmap(sampledBitmap);
-                            if (mLoadCallback != null) mLoadCallback.onSuccess();
+                            if (mLoadCallback != null) mLoadCallback.onSuccess(sampledBitmap);
                             mIsLoading = false;
                         }
                     });
