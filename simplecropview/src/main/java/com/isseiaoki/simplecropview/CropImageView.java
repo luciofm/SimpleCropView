@@ -1366,6 +1366,7 @@ public class CropImageView extends ImageView {
      */
     @Override
     public void setImageBitmap(Bitmap bitmap) {
+        mAngle = 0f;
         super.setImageBitmap(bitmap); // calles setImageDrawable internally
     }
 
@@ -1376,6 +1377,7 @@ public class CropImageView extends ImageView {
      */
     @Override
     public void setImageResource(int resId) {
+        mAngle = 0f;
         mIsInitialized = false;
         super.setImageResource(resId);
         updateLayout();
@@ -1388,6 +1390,7 @@ public class CropImageView extends ImageView {
      */
     @Override
     public void setImageDrawable(Drawable drawable) {
+        mAngle = 0f;
         mIsInitialized = false;
         super.setImageDrawable(drawable);
         updateLayout();
