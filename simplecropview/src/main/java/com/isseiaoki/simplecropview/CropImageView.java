@@ -1682,6 +1682,10 @@ public class CropImageView extends ImageView {
         return new RectF(mImageRect);
     }
 
+    public float getCurrentAngle() {
+        return mAngle;
+    }
+
     /**
      * Set crop mode
      *
